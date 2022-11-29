@@ -83,10 +83,21 @@ nav ul li a:hover {
 
 /* footer */
 
-#YjBakery {
+/* #YjBakery {
     width: 1230px;
     height: 500px;
-    background-image: url('img/background3.png');
+    background-image: url('../img/background3.png');
+  
+
+} */
+
+#YjBakery {
+    width: 100%;
+    height: 350px;
+    background-image: url('../img/background3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     margin: 130px auto 0px;
     clear: both;
 
@@ -94,16 +105,6 @@ nav ul li a:hover {
     color: rgb(94, 110, 126);
     font-size: 45px;
     text-align: center;
-
-}
-
-#YjBakery {
-    width: 100%;
-    height: 350px;
-    background-image: url('img/background3.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
 }
 
 
