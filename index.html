@@ -6,647 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        ul,
-        ol,
-        li {
-            list-style: none;
-        }
-
-        a{text-decoration: none; color: rgb(94, 110, 126);}
-
-        button{color: #fff;}
-
-
-        header {
-            width: 100px;
-            height: 50px;
-            margin: 10px 0 0 10px;
-        }
-
-        nav {
-            width: 700px;
-            height: 40px;
-            margin: 0 auto;
-        }
-
-        nav ul li {
-            float: left;
-            padding: 20px 20px 20px 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: rgb(94, 110, 126);
-        }
-
-        nav ul li a:hover {
-            color: black;
-        }
-
-        #slider {
-            width: 100%;
-            height: 1200px;
-            margin: 0 auto;
-            background: url("img/slider2.jpg") no-repeat;
-            background-position: top center;
-            background-size: cover;
-        }
-
-        .content {
-            width: 490px;
-            height: 800px;
-            margin-left: 336.5px;
-            padding: 200px 0 24px;
-        }
-
-        .content h1 {
-            text-align: center;
-            color: rgb(157, 7, 1);
-            font-size: 70px;
-        }
-
-        .content p {
-            text-align: center;
-            color: rgb(157, 7, 1);
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .content span {
-            text-align: center;
-            color: rgb(94, 110, 126);
-            margin: 40px;
-            font-weight: bold;
-            font-size: 20px;
-
-        }
-
-        .content button {
-
-            margin: 90px 0px 0px 120px;
-            border: solid 1px rgb(157, 7, 1);
-            border-radius: 5px;
-            width: 200px;
-            height: 45px;
-            background-color: rgb(157, 7, 1);
-            color: aliceblue;
-            font-size: 20px;
-        }
-
-        .box {
-            position: relative;
-            margin: 10px;
-            background-size: cover;
-            width: 400px;
-            height: 300px;
-        }
-
-        #ex {
-            width: 1230px;
-            height: 160px;
-
-            margin: 400px auto;
-        }
-
-        #ex div {
-            width: 30%;
-            height: 100%;
-
-            float: left;
-            padding-top: 30px;
-        }
-
-        #ex div img {
-            vertical-align: middle;
-        }
-
-        .eximg {
-            font-weight: bold;
-            color: rgb(94, 110, 126);
-            font-size: 25px;
-            text-align: center;
-
-        }
-
-        .eximg2 {
-
-            font-weight: bold;
-            color: rgb(94, 110, 126);
-            font-size: 25px;
-            text-align: center;
-            margin-left: 5%;
-        }
-
-        .eximg3 {
-
-            font-weight: bold;
-            color: rgb(94, 110, 126);
-            font-size: 25px;
-            text-align: center;
-            margin-left: 5%;
-        }
-
-        * {
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        #rmm {
-            width: 1230px;
-            height: 600px;
-
-            margin: 0 auto;
-            clear: both;
-
-            font-weight: bold;
-            color: rgb(157, 7, 1);
-            font-size: 60px;
-            text-align: center;
-        }
-
-
-        #rmm>.box {
-            width: 300px;
-            height: 380px;
-            float: left;
-            padding: 10px;
-        }
-
-        #rmm>.box img {
-            width: 100%;
-            margin: 0 0 20px 0px;
-        }
-
-        #rmm>div:nth-of-type(1) {
-            margin: 0 0 0 80px;
-        }
-
-        #rmm>div:nth-of-type(2) {
-            margin: 0 0 0 80px;
-        }
-
-        #rmm>div:nth-of-type(3) {
-            margin: 0 0 0 80px;
-        }
-
-        #rmm>.box h6 {
-            text-align: center;
-            color: rgb(94, 110, 126);
-            font-size: 20px;
-        }
-
-        #rmm>.box p {
-            text-align: center;
-            font-size: 12px;
-            color: rgb(94, 110, 126);
-            font-weight: normal;
-        }
-
-        #rmm>.box button {
-            background-color: rgb(157, 7, 1);
-            border-radius: 10px;
-            width: 200px;
-            height: 50px;
-            border: 1px solid rgb(157, 7, 1);
-            font-size: 20px;
-        }
-
-        #sigwrap {
-            width: 100%;
-            height: 670px;
-            background-image: url('img/background3.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100% 90%;
-        }
-
-
-        #sig {
-            width: 1230px;
-            height: 670px;            
-            margin: 130px auto 0px;
-            clear: both;
-
-            font-weight: bold;
-            color: rgb(157, 7, 1);
-            font-size: 70px;
-            text-align: center;
-        }
-
-
-        #sig>.box {
-            width: 330px;
-            height: 380px;
-            float: left;
-            padding: 1px;
-        }
-
-
-        #sig>.box img {
-            width: 100%;
-            margin: 0 0 20px 0px;
-        }
-
-        #sig>div:nth-of-type(1) {
-            margin: 0 0 0 80px;
-        }
-
-        #sig>div:nth-of-type(2) {
-            margin: 0 0 0 80px;
-        }
-
-        #sig>div:nth-of-type(3) {
-            margin: 0 0 0 80px;
-        }
-
-
-        #sig>.box p {
-            text-align: center;
-            font-size: 20px;
-            color: rgb(94, 110, 126);
-            font-weight: normal;
-            font-weight: bold;
-        }
-
-        #meterial {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
-
-            width: 1230px;
-            height: 600px;
-            margin: 0 auto;
-            font-weight: bold;
-
-            text-align: center;
-        }
-
-
-        #meterial>.box {
-            width: 480px;
-            height: 200px;
-            padding: 10px;
-
-        }
-
-        #meterial>.box img {
-            width: 182px;
-            height: 181px;
-            margin: 0 0 20px 0px;
-            float: left;
-        }
-
-
-        #meterial>.box p {
-            text-align: center;
-            color: rgb(94, 110, 126);
-            font-size: 20px;
-            float: left;
-            transform: translate(20%, 145%);
-        }
-
-
-        #variety>.variety1 img {
-            width: 700px;
-            height: 500px;
-            margin-left: 250px;
-            margin-top: 10px;
-
-        }
-
-        #variety>.variety1 span {
-            text-align: center;
-            font-size: 50px;
-            color: rgb(157, 7, 1);
-            margin-left: 380px;
-            font-weight: bold;
-          }   
-            
-            
-       
-
-        #variety>.variety1 p {
-            text-align: center;
-            font-size: 30px;
-            color: rgb(94, 110, 126);
-            margin-top: 40px;
-        }
-
-
-
-        #varietywrap {
-            width: 100%;
-            height: 700px;
-            background-image: url('img/background3.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100% 100%;
-        }
-
-
-        #variety {
-            
-
-            width: 1230px;
-            height: 700px;
-            margin: 80px auto 0;
-        }
-
-
-
-        #cc {
-            width: 1230px;
-            height: 800px;
-
-            margin: 0 auto;
-            margin-top: 90px;
-
-            font-weight: bold;
-            color: rgb(157, 7, 1);
-            font-size: 50px;
-            text-align: center;
-        }
-
-        #cc p {
-            font-size: 20px;
-            color: rgb(94, 110, 126);
-            text-align: center;
-
-        }
-
-
-
-
-        #cc>.box {
-            width: 300px;
-            height: 380px;
-            float: left;
-            padding: 10px;
-        }
-
-        #cc>.box img {
-            width: 100%;
-            margin: 0 0 20px 0px;
-        }
-
-        #cc>div:nth-of-type(1) {
-            margin: 0 0 0 70px;
-        }
-
-        #cc>div:nth-of-type(2) {
-            margin: 0 0 0 80px;
-        }
-
-        #cc>div:nth-of-type(3) {
-            margin: 0 0 0 80px;
-        }
-
-        #cc>.box h6 {
-            text-align: center;
-            color: rgb(94, 110, 126);
-            font-size: 20px;
-        }
-
-        #cc>.box p {
-            text-align: center;
-            font-size: 12px;
-            color: rgb(94, 110, 126);
-            font-weight: normal;
-
-        }
-
-        #cc>.box span {
-            color: black;
-            font-size: 20px;
-
-        }
-
-        #cc>.box button {
-            background-color: rgb(157, 7, 1);
-            border-radius: 10px;
-            width: 200px;
-            height: 45px;
-            border: 1px solid rgb(157, 7, 1);
-            font-size: 20px;
-
-        }
-
-
-        #cookie {
-            width: 1230px;
-            height: 450px;
-
-            margin: 130px auto 0px;
-            clear: both;
-
-            font-weight: bold;
-            color: rgb(157, 7, 1);
-            font-size: 60px;
-            text-align: center;
-        }
-
-
-        #cookie>.box {
-            width: 300px;
-            height: 380px;
-            float: left;
-            padding: 10px;
-        }
-
-
-        #cookie>.box img {
-            width: 100%;
-            margin: 0 0 20px 0px;
-        }
-
-        #cookie>div:nth-of-type(1) {
-            margin: 0 0 0 80px;
-        }
-
-        #cookie>div:nth-of-type(2) {
-            margin: 0 0 0 80px;
-        }
-
-        #cookie>div:nth-of-type(3) {
-            margin: 0 0 0 80px;
-        }
-
-
-        #cookie>.box p {
-            text-align: center;
-            font-size: 20px;
-            color: rgb(94, 110, 126);
-            font-weight: normal;
-        }
-
-
-
-
-        #doughnutwrap {
-            width: 100%;
-            height: 450px;
-            background-image: url('img/background11.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100% 100%;
-        }
-
-
-        #doughnut {
-            width: 1230px;
-            height: 450px;
-            
-
-            margin: 130px auto 0px;
-            clear: both;
-
-            font-weight: bold;
-            color: rgb(157, 7, 1);
-            font-size: 60px;
-            text-align: center;
-        }
-
-
-        #doughnut>.box {
-            width: 300px;
-            height: 380px;
-            float: left;
-            padding: 10px;
-        }
-
-
-        #doughnut>.box img {
-            width: 100%;
-            margin: 0 0 20px 0px;
-        }
-
-        #doughnut>div:nth-of-type(1) {
-            margin: 0 0 0 80px;
-        }
-
-        #doughnut>div:nth-of-type(2) {
-            margin: 0 0 0 80px;
-        }
-
-        #doughnut>div:nth-of-type(3) {
-            margin: 0 0 0 80px;
-        }
-
-
-        #doughnut>.box p {
-            text-align: center;
-            font-size: 20px;
-            color: rgb(94, 110, 126);
-            font-weight: normal;
-        }
-
-        #present {
-            width: 1230px;
-            height: 490px;
-
-            margin: 130px auto 0px;
-            clear: both;
-
-            font-weight: bold;
-            color: rgb(157, 7, 1);
-            font-size: 60px;
-            text-align: center;
-        }
-
-
-        #present>.box {
-            width: 400px;
-            height: 200px;
-            float: left;
-            padding: 10px;
-        }
-
-
-        #present>.box img {
-            width: 100%;
-            margin: 30px 60px;
-        }
-
-        #present>div:nth-of-type(1) {
-            margin: 0 0 0 100px;
-        }
-
-        #present>div:nth-of-type(2) {
-            margin: 0 0 0 80px;
-        }
-
-
-        #YjBakery {
-            width: 1230px;
-            height: 500px;
-            background-image: url('img/background3.png');
-            margin: 130px auto 0px;
-            clear: both;
-
-            font-weight: bold;
-            color: rgb(94, 110, 126);
-            font-size: 45px;
-            text-align: center;
-            
-        }
-
-        #YjBakery {
-            width: 100%;
-            height: 350px;
-            background-image: url('img/background3.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100% 100%;
-        }
-
-      
-
-        #YjBakery>footer{
-            font-size: 15px;
-            font-weight: normal;
-            text-align: left;
-            margin-top: 70px;
-            margin-left: 150px;}
-
-        #YjBakery>.box{
-            font-size: 13px;
-            font-weight: normal;
-            height: 10px;
-            text-align: left;
-            margin-top: 5px;
-            margin-left: 700px;
-            
-        }
-
-        #YjBakery>.logo{
-           
-           margin-top: 40px;
-          
-          
-        }
-
-        .box .info {
-
-            left: 0;
-            top: 10px;
-            right: 10px;
-
-        }
-    </style>
+    
+    <link rel="stylesheet" href="css/commom.css">
+    <link rel="stylesheet" href="css/project1.css">
 </head>
 
 <body>
 
     <header>
+
+        <div class="inputID">
+            <input type="text" placeholder="ID">
+            <input type="password" placeholder="password">
+            <input type="button" value="Log in">
+        </div>
+
+        <div class="bar">
+            <a href="#"> <img src="img/logo.png" alt="">
+                <p class="pagename">YjBakery</p>
+            </a>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="#">recommend</a></li>
@@ -656,8 +36,11 @@
                 <li><a href="#">doughnut</a></li>
                 <li><a href="#">present</a></li>
 
+
             </ul>
         </nav>
+
+
     </header>
 
     <div id="slider">
@@ -671,7 +54,7 @@
         </div>
 
         <div id="ex">
-            <div class="eximg"><img src="img/eximg.png" alt="">  organic</div>
+            <div class="eximg"><img src="img/eximg.png" alt=""> organic</div>
             <div class="eximg2"><img src="img/cal.png" alt="">row calorie</div>
             <div class="eximg3"><img src="img/animal.png" alt="">animal welfare</div>
         </div>
@@ -679,57 +62,57 @@
 
     <div id="rmm">
         <h5>recommended <br>Dessert</h5>
-    
+
         <div class="box">
             <a href="#"><img src="img/recommend.png" alt=""></a>
             <h6>strawberry cake</h6>
             <p>fresh strawberry & <br>condensed mlik</p>
             <button>order</button>
         </div>
-    
+
         <div class="box">
             <a href="#"><img src="img/recommend2.png" alt=""></a>
             <h6>chocolate cake</h6>
             <p>Belgian chocolate <br> cake</p>
             <button>order</button>
         </div>
-    
+
         <div class="box">
             <a href="#"><img src="img/recommend3.png" alt=""></a>
             <h6>earl grey cake</h6>
             <p>WTG <br>earl grey cake</p>
             <button>order</button>
         </div>
-    
+
     </div>
-    
+
     <div id="sigwrap">
-    
+
         <div id="sig">
             <h5>signature</h5>
-    
+
             <div class="box">
                 <a href="#"><img src="img/signature1.png" alt=""></a>
                 <p>raspberry cream cheese <br>cake</p>
             </div>
-    
+
             <div class="box">
                 <a href="#"><img src="img/signature2.png" alt=""></a>
                 <p>rainbow yogurt <br>cake</p>
             </div>
-    
+
             <div class="box">
                 <a href="#"><img src="img/signature3.png" alt=""></a>
                 <p>heart vanilla <br>cake</p>
             </div>
-    
+
         </div>
     </div>
-    
+
     <div id="meterial">
         <div class="box">
-    
-    
+
+
             <img src="img/real.png" alt="">
             <p>whole fruits&their juice <br>생과일 사용</p>
         </div>
@@ -746,22 +129,22 @@
             <p>homemade style <br>홈메이드 스타일</p>
         </div>
     </div>
-    
-    
+
+
     <div id="varietywrap">
-    
+
         <div id="variety">
             <div class="variety1">
-                <p>variety fruits flavor <span>mango grape melon cherry</span></p>
+                <p>variety fruits flavor <br> <span>mango grape melon cherry</span></p>
                 <img src="img/variety.png" alt="">
-    
+
             </div>
         </div>
     </div>
     <div id="cc">
         <h4>recommended <br>cupcake</h4>
         <p>Berries vegan chocolate vanilla</p>
-    
+
         <div class="box">
             <a href="#"><img src="img/cup1.png" alt=""></a>
             <h6>blueberry <br> cake</h6>
@@ -769,7 +152,7 @@
             <span>vegan</span> <br>
             <button>order</button>
         </div>
-    
+
         <div class="box">
             <a href="#"><img src="img/cup2.png" alt=""></a>
             <h6>cherry&chocolate <br> cupcake</h6>
@@ -777,8 +160,8 @@
             <span>vegan</span> <br>
             <button>order</button>
         </div>
-    
-    
+
+
         <div class="box">
             <a href="#"><img src="img/cup3.png" alt=""></a>
             <h6>vanilla <br> cupcake</h6>
@@ -787,88 +170,88 @@
             <button>order</button>
         </div>
     </div>
-    
+
     <div id="cookie">
         <h5>cookie</h5>
-    
+
         <div class="box">
             <a href="#"><img src="img/cookie1.png" alt=""></a>
             <p>carrot cookie</p>
         </div>
-    
+
         <div class="box">
             <a href="#"><img src="img/cookie2..png" alt=""></a>
             <p>chocochip cookie</p>
         </div>
-    
+
         <div class="box">
             <a href="#"><img src="img/cookie3.png" alt=""></a>
             <p>sugar cookie</p>
         </div>
-    
+
 
     </div>
-    
-    
+
+
     <div id="doughnutwrap">
-    
+
         <div id="doughnut">
             <h5>doughnut</h5>
-    
+
             <div class="box">
                 <a href="#"><img src="img/doughnut1.png" alt=""></a>
                 <p>twinkle doughnut</p>
             </div>
-    
+
             <div class="box">
                 <a href="#"><img src="img/doughnut2.png" alt=""></a>
                 <p>banana doughnut</p>
             </div>
-    
+
             <div class="box">
                 <a href="#"><img src="img/doughnut3.png" alt=""></a>
                 <p>dark chocolate <br> doughnut</p>
             </div>
-    
+
         </div>
     </div>
-    
+
     <div id="present">
         <h5>present</h5>
-    
+
         <div class="box">
             <a href="#"><img src="img/present1.jpg" alt=""></a>
         </div>
-    
-    
+
+
         <div class="box">
             <a href="#"><img src="img/present2.jpg" alt=""></a>
         </div>
-    
+
     </div>
-    
- 
-    
-        <div id="YjBakerywrap">
-    
-    
+
+
+
+    <div id="YjBakerywrap">
+
+
         <div id="YjBakery">
             <h4>Yj Bakery</h4>
-             <div class="logo">
+            <div class="logo">
                 <img src="img/logo.png" alt="">
             </div>
             <div class="box">
-            <nav>
-                <ul>
-                    <li>대표 : 장유정<br> 주소 : 안산 고잔동 60-74 </li>
-                    <li>e-mail : jyj0716@gmail.com <br>phone : 031-123-456</li>
-                    <li>instagram : YjBakery.0716</li>
-               
-                </ul>
-            </nav>
-        </div>
+                <nav>
+                    <ul>
+                        <li>대표 : 장유정<br> 주소 : 안산 고잔동 60-74 </li>
+                        <li>e-mail : jyj0716@gmail.com <br>phone : 031-123-456</li>
+                        <li>instagram : YjBakery.0716</li>
 
-          
+                    </ul>
+                </nav>
+            </div>
+
+
 
             <footer>
                 <nav>
@@ -879,22 +262,12 @@
                         <li><a href="#">cookie</a></li>
                         <li><a href="#">doughnut</a></li>
                         <li><a href="#">present</a></li>
-    
+
                     </ul>
                 </nav>
-    
-    
             </footer>
-            
-           
-    
         </div>
-          
-
     </div>
-    
-    
-    
-    </body>
+</body>
 
 </html>
