@@ -38,6 +38,10 @@
 
 }
 
+.content a {
+    color: #eee;
+}
+
 .content button {
 
     margin: 90px 0px 0px 120px;
@@ -46,9 +50,14 @@
     width: 200px;
     height: 45px;
     background-color: rgb(157, 7, 1);
-    color: aliceblue;
+    color: antiquewhite;
     font-size: 20px;
+
 }
+
+
+
+
 
 .box {
     position: relative;
@@ -103,10 +112,7 @@
     margin-left: 5%;
 }
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 #rmm {
     width: 1230px;
@@ -159,6 +165,10 @@
     font-weight: normal;
 }
 
+#rmm>.box a {
+    color: #eee;
+}
+
 #rmm>.box button {
     background-color: rgb(157, 7, 1);
     border-radius: 10px;
@@ -166,6 +176,7 @@
     height: 50px;
     border: 1px solid rgb(157, 7, 1);
     font-size: 20px;
+
 }
 
 #sigwrap {
@@ -377,6 +388,10 @@
     color: black;
     font-size: 20px;
 
+}
+
+#cc>.box a {
+    color: #eee;
 }
 
 #cc>.box button {
