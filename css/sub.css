@@ -6,7 +6,6 @@
 
 body {
     font-family: "맑은 고딕", "애플 고딕";
-    font-size: 12px;
     color: #666;
 }
 
@@ -114,11 +113,25 @@ button:nth-of-type(3) {
 
 }
 
-#maintext {
-    width: 1230px;
+#main1 {
+    font-size: 25px;
+    margin: 24px auto 0px;
+    text-align: center;
+}
+
+
+#maintext1 {
+
+    margin: 24px auto 0px;
+    text-align: center;
+}
+
+
+#maintext2 {
     margin: 50px auto 0px;
     text-align: center;
 }
+
 
 * {
     margin: 0;
@@ -143,63 +156,135 @@ td {
     padding: 0;
 }
 
-#shipping {
-    width: 1200px;
-    height: 500px;
-    margin: 39px auto 0;
+ad p {
+    padding: 0 0 30px 0;
 }
 
-#shipping>ul {
-    width: 1200px;
-    height: 50px;
-    margin: 40px auto 0px;
-}
-
-#shipping>ul>li {
-    width: 300px;
-    height: 100%;
-    background-color: #eee;
+.aclass h2 {
     float: left;
-    text-align: center;
-    padding: 15px 0 0 0px;
-    border: 1px solid #ddd;
-    border-bottom: 1px solid #000;
-    font-size: 13px;
+    margin: 15px 0 -9px 50px;
 }
 
-#shipping>ul>li>a {
-    color: #000;
+.textbox {
+    font-size: 14px;
+    height: 600px;
+    margin-bottom: 20px;
+    margin-left: 0px;
 }
 
-#shipping>ul>li:nth-child(2) {
-    background-color: #fff;
-    border: 1px solid #000;
+#detail .textbox li,
+#post .textbox li {
+    float: left;
+    margin: 20px 50px;
+    width: 1200px;
+
+}
+
+
+
+#detail {
+
+    border: 1px solid black;
     border-bottom: none;
-    color: #000;
+    background-color: white;
 }
 
-#shipping>h2 {
+#detail>ul>li:hover {
+    background-color: #87c3fc;
+}
+
+#detail>ul>li:hover a {
+    color: #fff;
+}
+
+#detail>ul>li:nth-child(1) {
+    background-color: white;
+}
+
+#detail>ul>li:nth-child(1) a {
+    color: #333;
+}
+
+#post {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#post>ul>li {
+    box-sizing: border-box;
     float: left;
-    padding: 50px 20px 0px;
-    font-size: 19px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #ccc;
+    border-bottom: 1px solid black;
+    font-weight: bold;
 }
 
-#shipping>#shipping_textbox {
+#post>ul>li:nth-of-type(2) {
+    border: 1px solid black;
+    border-bottom: none;
+    background-color: white;
+}
+
+#post>ul>li:hover {
+    background-color: #87c3fc;
+}
+
+#post>ul>li:hover a {
+    color: #fff;
+}
+
+#post>ul>li:nth-child(2) {
+    background-color: white;
+}
+
+#post>ul>li:nth-child(2) a {
+    color: #333;
+}
+
+
+#qna {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#qna>ul>li {
+    box-sizing: border-box;
+    float: left;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #ccc;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+#qna>ul>li:nth-of-type(4) {
+    border: 1px solid black;
+    border-bottom: none;
+    background-color: white;
+}
+
+#qna>ul>li:hover {
+    background-color: #87c3fc;
+}
+
+#qna>ul>li:hover a {
+    color: #fff;
+}
+
+#qna>ul>li:nth-child(4) {
+    background-color: white;
+}
+
+#qna>ul>li:nth-child(4) a {
+    color: #333;
+}
+
+.aclass>ul>li a {
     width: 100%;
-    height: 270px;
-}
+    padding: 20px 0;
+    display: inline-block;
 
-#shipping>#shipping_textbox>ul {
-    display: block;
-    width: 1100px;
-    height: 280px;
-    margin: 100px 35px 0px;
 }
-
-#shipping>#shipping_textbox>ul>li {
-    font-size: 13px;
-    list-style: disc;
-    margin: 7px 10px;
-    color: #666;
-}
-
