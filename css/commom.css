@@ -23,6 +23,21 @@ button {
     color: #fff;
 }
 
+
+table,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "맑은 고딕", "애플 고딕";
+    color: #666;
+}
+
+
 /* header */
 
 header {
